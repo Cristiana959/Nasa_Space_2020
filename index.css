@@ -29,3 +29,9 @@ nav .navbar-nav li a {
 .bg-color {
     background-color: #495057;
 }
+
+#team {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
