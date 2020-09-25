@@ -2,7 +2,7 @@
     height: 700px;
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid #D90429;
+    border: 5px solid #212529;
     border-radius: 50px;
     border-collapse: separate;
     border-spacing: 15px;
@@ -19,7 +19,7 @@ body {
 /* aici e navbar litere*/
 
 nav .navbar-nav li a {
-    color: #8D99AE!important;
+    color: #d8dbe2!important;
     font-size: 20px;
 }
 
@@ -27,5 +27,5 @@ nav .navbar-nav li a {
 /* aici e navbar background*/
 
 .bg-color {
-    background-color: #2B2D42;
+    background-color: #495057;
 }
