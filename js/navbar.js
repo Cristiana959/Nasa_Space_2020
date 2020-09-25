@@ -10,13 +10,13 @@ function navbars() {
 }
 
 //**Dynamic elements of the navbar made using javascript for easier modifing purposes */
-
+//* e prost codul si nu prea e ok cum am code acolo alea 2 parti pt navbar dar cat merge e ok //
 function nav_ite() {
-    let navbar_items = ["Ce", "bine", "arata", "fata", "ma face", "sa imi las", "nevasta"];
+    let navbar_items = ["Ce", "bine", "arata", "ma face", "sa imi las", "nevasta"];
     var ul = document.createElement("ul");
     ul.classList.add("navbar-nav");
     //**Would ve been usefull to use ForEach instead of For */
-    for (var i = 0; i < navbar_items.length; i++) {
+    for (var i = 0; i < navbar_items.length / 2; i++) {
         var li = document.createElement("li");
         li.classList.add("nav-item");
         var li_1 = document.createElement("li");
@@ -29,8 +29,27 @@ function nav_ite() {
         li.appendChild(a);
         ul.appendChild(li);
     }
-    var element = document.getElementById("navbarNav");
+    var element = document.getElementById("first_nav_part");
     element.appendChild(ul);
+    var new_ul = document.createElement("ul");
+    new_ul.classList.add("navbar-nav");
+    for (var i = navbar_items.length / 2; i < navbar_items.length; i++) {
+        var li = document.createElement("li");
+        li.classList.add("nav-item");
+        var li_1 = document.createElement("li");
+        li_1.classList.add("nav-item");
+        var node = document.createTextNode(navbar_items[i]);
+        var a = document.createElement("a");
+        a.classList.add("nav-link");
+        a.href = "#"
+        a.appendChild(node);
+        li.appendChild(a);
+        new_ul.appendChild(li);
+    }
+    new_ul.classList.add("ml-auto");
+    var middle_element = document.getElementById("middle_nav_bar")
+    var new_element = document.getElementById("second_nav_part");
+    new_element.appendChild(new_ul);
 }
 
 function clicked() {
@@ -48,3 +67,4 @@ function clicked() {
 
 //** Calling the functions */
 nav_ite();
+clicked();

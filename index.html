@@ -27,26 +27,33 @@
 
 <body>
     <!-- Image and text -->
-    <nav class="navbar navbar-expand-lg bg-color">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
+    <nav class="navbar navbar-expand-md main-nav bg-color">
+        <div class="container">
+            <div class="navbar-collapse collapse nav-content order-2" id="first_nav_part"> </div>
+            <ul class="nav navbar-nav text-nowrap flex-row mx-md-auto order-1 order-md-2" id="middle_nav_bar">
+                <li class="nav-item"><a class="nav-link" href="#">Fata</a></li>
+                <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target=".nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            </ul>
+            <div class="ml-auto navbar-collapse collapse nav-content order-3 order-md-3" id="second_nav_part"> </div>
             <script src="js/navbar.js"></script>
-        </div>
     </nav>
 
     <!--Breaks ca sunt prost si nu stiu sa dau style correct-->
     <br>
     <br>
     <br>
-
-    <!--Render the border -->
-    <div id="border">
-        <!--Render the map-->
-        <div id="map">
-            <script src="data_src/europa.js"></script>
-            <script src="js/map.js"></script>
+    <div class="container">
+        <div id="border">
+            <!--Render the map-->
+            <div id="map">
+                <script src="data_src/europa.js"></script>
+                <script src="js/map.js"></script>
+            </div>
         </div>
     </div>
+    <!--Render the border -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
