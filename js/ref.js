@@ -1,4 +1,5 @@
 function Render_ref() {
+    //**Read the content of a file and display it as p's in web */
     fetch('../ref.txt')
         .then(response => response.text())
         .then(data => {

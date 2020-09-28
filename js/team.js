@@ -1,3 +1,4 @@
+//** Generate the header of the table */
 function generateTableHead(table, data) {
     let thead = table.createTHead();
     let row = thead.insertRow();
@@ -9,6 +10,7 @@ function generateTableHead(table, data) {
     }
 }
 
+//** Generate the contents of the table */
 function generateTable(table, data) {
     for (let element of data) {
         let row = table.insertRow();
@@ -20,6 +22,7 @@ function generateTable(table, data) {
     }
 }
 
+//** Render in html all the mods that have been made */
 function Team_render() {
     let profile_infos = [
         { name: "Monte Falco", picture: 1658, link: "Parco Foreste Casentinesi" },

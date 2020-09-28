@@ -15,11 +15,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
 
-
     <!---Leaflet-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
+    <!--Plotly models-->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!--Chemical models-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/3Dmol/1.4.0/3Dmol-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/3Dmol/1.4.0/3Dmol-nojquery.js"></script>
     <title>PUSTOAICA CU PAR ROSCAT </title>
 </head>
 
@@ -50,21 +55,46 @@
                 <script src="data_src/europa.js"></script>
                 <script src="js/map.js"></script>
             </div>
+            <br>
         </div>
-        <!--Line breaks ca sunt prost si nu stiu sa dau style correct-->
-        <hr>
+
         <!--Render the References page -->
         <div id="ref">
             <script src="js/ref.js"></script>
+
         </div>
-        <!--Line breaks ca sunt prost si nu stiu sa dau style correct-->
-        <hr>
+
         <!--Render the Team page -->
         <div id="team">
             <table></table>
             <script src="js/team.js"></script>
         </div>
 
+        <!--Render the plotly page -->
+        <div id="graph">
+            <script src="js/plotly.js"></script>
+            <p>Tutorial from Plotly</p>
+            <br>
+        </div>
+
+
+        <div id="graph2">
+            <script src="js/plotly2.js"></script>
+            <p>Tutorial from Plotly2</p>
+            <br>
+        </div>
+
+        <div id="molecules">
+            <iframe style="width: 800px; height: 600px; align-self: center;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls&cid=67448&bg=white">
+          </iframe>
+            <p>Am valoare de dau si la saraci - Decacylene</p>
+            <p>Pot sa ma misc coardo</p>
+        </div>
+
+        <!--Buttons for navigation -->
+        <div id="btns">
+            <script src="js/btns.js"></script>
+        </div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -72,6 +102,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
+
 </body>
 
 </html>
