@@ -1,4 +1,6 @@
 //** Tried to create a navbar from javascript and it fails  */
+let a_array = [];
+
 function navbars() {
     var navbar = document.createElement("nav");
     navbar.classList.add("navbar");
@@ -50,6 +52,7 @@ function nav_ite() {
     var middle_element = document.getElementById("middle_nav_bar")
     var new_element = document.getElementById("second_nav_part");
     new_element.appendChild(new_ul);
+    console.log(datagrid.length)
 }
 
 function clicked() {

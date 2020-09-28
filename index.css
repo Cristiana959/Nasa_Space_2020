@@ -13,6 +13,7 @@
 
 body {
     background-color: #EDF2F4;
+    font-family: 'Asap', sans-serif;
 }
 
 
@@ -34,4 +35,27 @@ nav .navbar-nav li a {
     margin: auto;
     width: 50%;
     padding: 10px;
+}
+
+
+/*Buttons */
+
+.mybtn {
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 25px;
+}
+
+.mybtn:hover {
+    background-color: #003049;
+    color: #EDF2F4;
+}
+
+.my_height {
+    height: 750px;
 }

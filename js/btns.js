@@ -2,12 +2,14 @@ let div_btns = document.getElementById("btns");
 
 var buttons_1 = document.createElement("button");
 var buttons_2 = document.createElement("button");
-var node1 = document.createTextNode("Button prev");
-var node2 = document.createTextNode("Button next");
+var node1 = document.createTextNode("<< Button prev");
+var node2 = document.createTextNode("Button next >>");
 buttons_1.appendChild(node1);
 buttons_2.appendChild(node2);
 div_btns.appendChild(buttons_1);
 div_btns.appendChild(buttons_2);
+buttons_1.className += "mybtn"
+buttons_2.className += "mybtn";
 
 var div_border = document.getElementById("border");
 var div_ref = document.getElementById("ref");
