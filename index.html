@@ -89,12 +89,37 @@
         </div>
 
         <div id="molecules">
-            <iframe style="width: 800px; height: 600px; align-self: center;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls&cid=67448&bg=white">
-          </iframe>
+          <div id="molecules">
+          
+            <div id="container">
+            <script>
+                const container = document.getElementById("container");
+
+                function makeRows(rows, cols) {
+                container.style.setProperty('--grid-rows', rows);
+                container.style.setProperty('--grid-cols', cols);
+                for (c = 0; c < (rows * cols); c++) {
+                let cell = document.createElement("IFRAME");
+                cell.setAttribute("style","width: 200px; height: 100px; align-self: center;") ;
+                cell.setAttribute("src","https://embed.molview.org/v1/?mode=balls&cid=67448&bg=white") ;
+                container.appendChild(cell).className = "grid-item";
+            };
+        };
+
+makeRows(16, 16);
+            </script>
+            </div>
             <p>Am valoare de dau si la saraci - Decacylene</p>
             <p>Pot sa ma misc coardo</p>
         </div>
     </div>
+    <div class="container">
+        <!--Buttons for navigation -->
+        <div id="btns" class="d-flex justify-content-center">
+            <script src="js/btns.js"></script>
+        </div>
+    </div>
+
     <div class="container">
         <!--Buttons for navigation -->
         <div id="btns" class="d-flex justify-content-center">
